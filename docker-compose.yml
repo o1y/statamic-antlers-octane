@@ -1,0 +1,9 @@
+services:
+  statamic:
+    build:
+      context: ./docker
+      target: development
+    ports:
+      - 8085:8080
+    volumes:
+      - ./:/var/www
