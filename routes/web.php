@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 // Route::statamic('example', 'example-view', [
 //    'title' => 'Example'
 // ]);
+
+Route::statamic('/sitemap.xml', 'sitemap/sitemap', [
+    'layout' => null,
+    'content_type' => 'application/xml'
+]);

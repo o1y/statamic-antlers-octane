@@ -1,0 +1,6 @@
+
+{{ collection from="pages" as="posts" select="permalink" }}
+    {{ posts }}
+        {{ permalink }}
+    {{ /posts }}
+{{ /collection }}
